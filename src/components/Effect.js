@@ -6,18 +6,13 @@ import Emoji from './Emoji';
 
 const Effect = ({icon, screenWidth, transitionActive}) => {
 
-  let emoticons = [];
   let emotiWidth = screenWidth / 5;
-  let emotiCount = 30;
+  let emotiCount = 8;
   let emotiObjectArray = [];
 
   for (let i = 0; i < emotiCount.toFixed(); i++){
-
     let animationTimes =( Math.random() * (1.0000 - 4.000) + 4.000).toFixed(4);
-
-    let styles = {
-      animationDuration: animationTimes +'s'
-    }
+    let styles = {animationDuration: animationTimes +'s'};
 
     emotiObjectArray.push({
       id: i,
@@ -25,20 +20,19 @@ const Effect = ({icon, screenWidth, transitionActive}) => {
       styles: styles,
       width: emotiWidth
     });
+  };
 
-  }
-
-  emoticons = emotiObjectArray.map(function(emoti){
+   const emoticons = emotiObjectArray.map((emoti) => {
     return(
       <Emoji
         key = {emoti.id}
         icon={emoti.img}
         styles={emoti.styles}
-        transitionActive={transitionActive}
         width={emoti.width}
+        transitionActive={transitionActive}
        />
     )
-  })
+  });
 
   return (
     <div className="emoji-effect">
@@ -47,6 +41,6 @@ const Effect = ({icon, screenWidth, transitionActive}) => {
         </div>
     </div>
   )
-}
+};
 
 export default Effect;

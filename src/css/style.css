@@ -61,7 +61,7 @@ body .main-container {
   }
   100% {
     opacity: 0;
-    transform: translateY(-70vh);
+    transform: translateY(-90vh);
   }
 }
 @-webkit-keyframes fadeOut {
@@ -71,7 +71,7 @@ body .main-container {
   }
   100% {
     opacity: 0;
-    transform: translateY(-70vh);
+    transform: translateY(-90vh);
   }
 }
 @-o-keyframes fadeOut {
@@ -81,7 +81,7 @@ body .main-container {
   }
   100% {
     opacity: 0;
-    transform: translateY(-70vh);
+    transform: translateY(-90vh);
   }
 }
 @keyframes fadeOut {
@@ -91,6 +91,6 @@ body .main-container {
   }
   100% {
     opacity: 0;
-    transform: translateY(-70vh);
+    transform: translateY(-90vh);
   }
 }

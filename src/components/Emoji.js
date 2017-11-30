@@ -2,6 +2,7 @@
 import React from 'react';
 
 const Emoji = ({icon, name, onClick, styles, transitionActive, width}) => {
+
   let activeClass = '';
 
   if(transitionActive){
